@@ -3,6 +3,7 @@ const arm = document.querySelector(".arm");
 const legs = document.querySelector(".legs");
 const button = document.querySelector("button");
 const wordId = document.querySelector("#word");
+const go = document.querySelector("#go");
 const pieces = document.querySelectorAll(".d-none");
 
 const audioElement = new Audio("../assets/audios/Daft_Punk_-_Veridis_Quo_47961262.mp3");
@@ -40,7 +41,10 @@ function startGame(word) {
 }
 
 function gameOver(num) {
-    if (num === 4) console.log("oyun bitti");
+    if (num === 4) {
+      console.log("oyun bitti");  
+      go.classList.remove("d-none");
+    }
 }
 
 startGame(words[randomNumber])
