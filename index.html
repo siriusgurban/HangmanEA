@@ -18,7 +18,7 @@
         <div class="container position-relative">
 
             <img id="go" class="position-absolute dispImg"
-                style="width: 56%; left:30%; z-index: 9999; top: 80%; transform: translate(0, -50%)"
+                style="width: 56%; z-index: 9999; top: 80%; left:30%; transform: translate(0, -50%)"
                 src="./assets/images/c1eff66f54b5c33.gif" alt="gameover" srcset="">
 
             <div class="d-flex">
@@ -36,15 +36,16 @@
                         style="position: absolute; top:464px; left: 136px; z-index: 997;">
                     <img class="legs d-none " src="./assets/images/Legs.svg" alt="" srcset=""
                         style="position: absolute; top:490px; left: 42px; z-index: 996;">
-                        <div id="tryagain" class="text-warning dispImg" style="position: absolute; top: 600px; left: 12px; font-size: 60px; font-weight: bold; cursor: pointer;">Try again</div>
-                    </div>
-
-                <div class="right d-flex flex-column justify-content-center">
-                    <h1 class="text-center mt-5">Hangman</h1>
-                    <!-- <div>Secret word</div> -->
-                    <div id="word"></div>
+                    <div id="tryagain" class="text-warning dispImg"
+                        style="position: absolute; top: 600px; left: 12px; font-size: 60px; font-weight: bold; cursor: pointer;">
+                        Try again</div>
                 </div>
-                <div id="win" class="dispWin" style="font-size: 100px; ">You win</div>
+
+                <div class="right d-flex flex-column justify-content-center ">
+                    <h1 class="text-center mt-5">Hangman</h1>
+                    <div id="word"></div>
+                    <div id="win" class="dispWin zoom-in-out-box" style="font-size: 120px; color: darkgoldenrod; font-weight: bold;">You win</div>
+                </div>
 
             </div>
         </div>

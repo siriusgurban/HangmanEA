@@ -57,6 +57,7 @@ h1 {
     text-align: center;
     color: red;
     font-weight: bold;
+    margin-top: -50px;
 }
 
 .right{
@@ -72,8 +73,13 @@ h1 {
 }
 
 .dispWin{
+
   display: none;
 
+}
+
+#win{
+  margin-top: -100px;
 }
 
 @keyframes animatedBackground {
@@ -95,4 +101,22 @@ h1 {
     background-position: 0px 0px;
     background-repeat: repeat-x;
     animation: animatedBackground 20s linear infinite alternate;
+  }
+
+  .zoom-in-out-box {
+    /* width: 50px;
+    height: 50px; */
+    animation: zoom-in-zoom-out 2.5s ease ;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
   }
