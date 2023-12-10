@@ -67,6 +67,15 @@ h1 {
     display: none;
 }
 
+.dispImg{
+  display: none;
+}
+
+.dispWin{
+  display: none;
+
+}
+
 @keyframes animatedBackground {
     from {
       background-position: 0 0;
